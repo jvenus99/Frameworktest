@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="row menu_logo">
+        <div class=" col-2 col-sm-2 col-md-2 col-lg-2 logo">
+          <img src="/imgs/logo.png" alt="Imagem Logo" class="imagemlogo" />
+        </div>
+      </div>
+      <div class="row menu_principal">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 menu1">
+          <nav class="navbar navbar-expand-lg navbar-dark  bg" id="navbar">
+            <a class="navbar-brand" href="index.html"
+              ><i class="fa fa-home fa-1x" aria-hidden="true"></i> Home</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a id="posts" class="nav-link" href="#"
+                    ><i class="fa fa-tasks" aria-hidden="true"></i>
+                    Postagens<span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item active">
+                  <a id="albuns" class="nav-link" href="#"
+                    ><i class="fa fa-folder-open" aria-hidden="true"></i>
+                    Álbuns<span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item active">
+                  <a id="todos" class="nav-link" href="#"
+                    ><i class="fa fa-globe" aria-hidden="true"></i> TODO's<span
+                      class="sr-only"
+                      >(current)</span
+                    ></a
+                  >
+                </li>
+              </ul>
+              <input type="text" id="txtPesquisa" />
+              <button id="btnPesquisa">Pesquisar</button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="container ">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12"
+      <div id="exibe">
+        <div class="row  titulo1">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <h2>Sobre Mim</h2>
+          </div>
+        </div>
+        <div class="row text">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <p align="justify">
+              Sou João Victor, tenho 18 anos e faço o curso de Sistemas de Informação na PUC Minas. Iniciei no primeiro semestre de 2020 e até o momento cursei as disciplinas de algoritmos, técnicas de programação, desenvolvimento Web e introdução à computação, onde aprendi a programar na linguagem Java. No ano de 2019 me formei como técnico em Eletrônica pela Universidade Federal de Viçosa/CAMPUS FLORESTAL e no mesmo realizei a disciplina de programação, aprendendo a linguagem C++.
+            </p>
+          </div>
+        </div>
+        <div class="row imagem_musica">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt=""
+          />
+          </div>
+        </div>
+        <div class="text2">
+          <p align="justify">
+            Tenho a música como hobbie e a amo. Sempre estou em busca de aprender um novo instrumento, porém, posso destacar como favoritos o violão e a guitarra. Considero a música como um ótimo exercício para concentração e progressão, além de envolver vários desafios e constante evolução.
+          </p>
+        </div>
+      </div>
+    </div>
+    </main>
+
+    <footer>
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 footer_area">
+          João Victor= Todos os direitos reservados 2020
+        </div>
+      </div>
+    </footer>
+
+    <script src="/src/index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
